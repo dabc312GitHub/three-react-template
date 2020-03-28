@@ -1,0 +1,43 @@
+{
+  "files": {
+    "static/js/0.465551d6.chunk.js": "/three-react-template/static/js/0.465551d6.chunk.js",
+    "static/js/0.465551d6.chunk.js.map": "/three-react-template/static/js/0.465551d6.chunk.js.map",
+    "main.css": "/three-react-template/static/css/main.8fa6bb5c.chunk.css",
+    "main.js": "/three-react-template/static/js/main.22f1d091.chunk.js",
+    "main.js.map": "/three-react-template/static/js/main.22f1d091.chunk.js.map",
+    "runtime-main.js": "/three-react-template/static/js/runtime-main.c572ea23.js",
+    "runtime-main.js.map": "/three-react-template/static/js/runtime-main.c572ea23.js.map",
+    "static/js/3.81834e7b.chunk.js": "/three-react-template/static/js/3.81834e7b.chunk.js",
+    "static/js/3.81834e7b.chunk.js.map": "/three-react-template/static/js/3.81834e7b.chunk.js.map",
+    "static/css/4.81dd5869.chunk.css": "/three-react-template/static/css/4.81dd5869.chunk.css",
+    "static/js/4.85367d20.chunk.js": "/three-react-template/static/js/4.85367d20.chunk.js",
+    "static/js/4.85367d20.chunk.js.map": "/three-react-template/static/js/4.85367d20.chunk.js.map",
+    "static/css/5.81dd5869.chunk.css": "/three-react-template/static/css/5.81dd5869.chunk.css",
+    "static/js/5.47cee476.chunk.js": "/three-react-template/static/js/5.47cee476.chunk.js",
+    "static/js/5.47cee476.chunk.js.map": "/three-react-template/static/js/5.47cee476.chunk.js.map",
+    "static/css/6.81dd5869.chunk.css": "/three-react-template/static/css/6.81dd5869.chunk.css",
+    "static/js/6.473d0e7e.chunk.js": "/three-react-template/static/js/6.473d0e7e.chunk.js",
+    "static/js/6.473d0e7e.chunk.js.map": "/three-react-template/static/js/6.473d0e7e.chunk.js.map",
+    "static/css/7.81dd5869.chunk.css": "/three-react-template/static/css/7.81dd5869.chunk.css",
+    "static/js/7.e5310302.chunk.js": "/three-react-template/static/js/7.e5310302.chunk.js",
+    "static/js/7.e5310302.chunk.js.map": "/three-react-template/static/js/7.e5310302.chunk.js.map",
+    "index.html": "/three-react-template/index.html",
+    "precache-manifest.e5a2d4717221ee5be30ba0b01f63d664.js": "/three-react-template/precache-manifest.e5a2d4717221ee5be30ba0b01f63d664.js",
+    "service-worker.js": "/three-react-template/service-worker.js",
+    "static/css/4.81dd5869.chunk.css.map": "/three-react-template/static/css/4.81dd5869.chunk.css.map",
+    "static/css/5.81dd5869.chunk.css.map": "/three-react-template/static/css/5.81dd5869.chunk.css.map",
+    "static/css/6.81dd5869.chunk.css.map": "/three-react-template/static/css/6.81dd5869.chunk.css.map",
+    "static/css/7.81dd5869.chunk.css.map": "/three-react-template/static/css/7.81dd5869.chunk.css.map",
+    "static/css/main.8fa6bb5c.chunk.css.map": "/three-react-template/static/css/main.8fa6bb5c.chunk.css.map",
+    "static/js/0.465551d6.chunk.js.LICENSE.txt": "/three-react-template/static/js/0.465551d6.chunk.js.LICENSE.txt",
+    "static/js/3.81834e7b.chunk.js.LICENSE.txt": "/three-react-template/static/js/3.81834e7b.chunk.js.LICENSE.txt",
+    "static/media/sand.jpg": "/three-react-template/static/media/sand.be1ebb92.jpg",
+    "static/media/sand_norm.png": "/three-react-template/static/media/sand_norm.3d153e6a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c572ea23.js",
+    "static/js/3.81834e7b.chunk.js",
+    "static/css/main.8fa6bb5c.chunk.css",
+    "static/js/main.22f1d091.chunk.js"
+  ]
+}
