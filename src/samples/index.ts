@@ -32,6 +32,18 @@ const BoxSplitDemo = {
   args: {},
   comp: lazy(() => import("../samples/BoxSplitDemo"))
 };
+const HeightmapGenTool = {
+  tags: [SAMPLE_TYPE.TOOL],
+  desc: "Generates heightmaps from various height functions",
+  args: {caseSelect: 0},
+  comp: lazy(() => import("../samples/Tools/HeightmapGen"))
+};
+const CsvGrapherTool = {
+  tags: [SAMPLE_TYPE.TOOL],
+  desc: "input your CSV data either from text area or providing an external CSV file address in url params ",
+  args: {extCsvFile: "enterCsvUrlHere"},
+  comp: lazy(() => import("../samples/Tools/CsvGrapherTool"))
+};
 const TestBoxSplit = {
   tags: [SAMPLE_TYPE.TEST],
   desc: "",
@@ -44,12 +56,6 @@ const TestRaycastHlp = {
   args: {},
   comp: lazy(() => import("../samples/RaycastHlp.test"))
 };
-const HeightmapGenTool = {
-  tags: [SAMPLE_TYPE.TOOL],
-  desc: "Generates heightmaps from various height functions",
-  args: {caseSelect: 0},
-  comp: lazy(() => import("../samples/Tools/HeightmapGen"))
-};
 
 export {
   BasicDemo,
@@ -57,6 +63,7 @@ export {
   ModelLoadCustUrl,
   BoxSplitDemo,
   HeightmapGenTool,
+  CsvGrapherTool,
   TestBoxSplit,
-  TestRaycastHlp
+  TestRaycastHlp,
 };

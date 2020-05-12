@@ -64,12 +64,8 @@ export default ({ args }: any) => {
     return (
         <>
             <InfoOverlay sampleName={sampleName} sampleDesc={sampleDesc} />
-            <CaseSelector
-                items={ALL_CASES}
-                current={currCase}
-                onSelect={onCaseChange}
-            />
-            {selectCase === "geoFunc" ? <TextBox handleSubmit={handleSubmit} defaultValue={JSON.stringify(DEFAULT_GEODATA_INPUT, null, 4)} /> : ""}
+            {/* <CaseSelector items={ALL_CASES} current={currCase} onSelect={onCaseChange}/> */}
+            <TextBox handleSubmit={handleSubmit} defaultValue={JSON.stringify(DEFAULT_GEODATA_INPUT, null, 4)} />
             <CanvasOverlay width={W} height={H} pointsBuff={heightArr} />
         </>
     );
