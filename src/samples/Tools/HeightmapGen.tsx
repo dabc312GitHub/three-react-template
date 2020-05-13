@@ -6,10 +6,10 @@ import {
 } from "../../modules/UI/Overlay";
 import { Vector2 } from "three";
 import * as HeightFunctions from "../../resources/catalogs/misc/heightFunctions";
-import { projectGeoData, ptsListHeighFn, DEFAULT_GEODATA_INPUT } from "../../modules/Geo/GeoTools";
+import { projectGeoData, ptsListHeighFn} from "../../modules/Geo/GeoTools";
 import { TextBox } from "../../modules/Geo/UI/input";
 import { CanvasOverlay } from "../../modules/Heightmap/UI/canvas";
-// import geoData from "../../resources/assets/oth/geodata.json";
+// import geoData from "../../../public/dataset/geodata.json";
 
 const W = 256;
 const H = 256;
@@ -20,7 +20,8 @@ const ALL_CASES = [...Object.keys(HEIGHTFUNCS)];
 
 export default ({ args }: any) => {
     const [currCase, setCurrCase] = useState(0);
-    const {sampleName, sampleDesc} = args;
+    const [data, setData] = useState("enter json");
+    const {sampleName, sampleDesc, caseSelect} = args;
 
     const selectCase = ALL_CASES[currCase]
     const currFunc = HEIGHTFUNCS[selectCase]
@@ -34,6 +35,7 @@ export default ({ args }: any) => {
         evt.preventDefault();
         const data = JSON.parse(txt);
         processCustData(data);
+        setData(data)
     }
 
     const processCustData = async (inputData: any) => {
@@ -54,6 +56,13 @@ export default ({ args }: any) => {
 
     }, [])
 
+    useEffect(() => {
+        // check if custom case was provided
+        if (caseSelect !== undefined && caseSelect !== null && caseSelect !== "") {
+            setCurrCase(caseSelect);
+        }
+    }, [])
+
     // compute the height arr that will fill canvas
     const arr: any = Array(W * H).keys();
     const heightArr = [...arr]
@@ -69,7 +78,7 @@ export default ({ args }: any) => {
                 current={currCase}
                 onSelect={onCaseChange}
             />
-            {selectCase === "geoFunc" ? <TextBox handleSubmit={handleSubmit} defaultValue={JSON.stringify(DEFAULT_GEODATA_INPUT, null, 4)} /> : ""}
+            {selectCase === "geoFunc" ? <TextBox handleSubmit={handleSubmit} val={JSON.stringify(data, null, 4)} /> : ""}
             <CanvasOverlay width={W} height={H} pointsBuff={heightArr} />
         </>
     );

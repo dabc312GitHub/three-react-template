@@ -13,23 +13,6 @@ const SRS = {
   target: 3857  // 
 }
 
-// default geo data
-export const DEFAULT_GEODATA_INPUT = [{
-  "lon": "4.123",
-  "lat": "45.432",
-  "z": "100.0",
-},
-{
-  "lon": "4.1235",
-  "lat": "45.4325",
-  "z": "125.0",
-},
-{
-  "lon": "4.124",
-  "lat": "45.4321",
-  "z": "125.0",
-}]
-
 /**
  * linear projection of geodata
  * @param geoData array of geo data with terrain elevation

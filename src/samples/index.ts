@@ -41,7 +41,7 @@ const HeightmapGenTool = {
 const CsvGrapherTool = {
   tags: [SAMPLE_TYPE.TOOL],
   desc: "input your CSV data either from text area or providing an external CSV file address in url params ",
-  args: {extCsvFile: "enterCsvUrlHere"},
+  args: {csvFileUrl: "dataset/csvdata.txt"},
   comp: lazy(() => import("../samples/Tools/CsvGrapherTool"))
 };
 const TestBoxSplit = {

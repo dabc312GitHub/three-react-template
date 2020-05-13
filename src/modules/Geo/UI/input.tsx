@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './styles.css'
 /**
  * Multi purpose text box
  * @param handleSubmit 
  */
-export const TextBox = ({ handleSubmit, defaultValue = "empty" }: any) => {
-    const [text, setText] = useState(defaultValue);
+export const TextBox = ({ handleSubmit, val = "empty" }: any) => {
+    const [text, setText] = useState(val);
   
     const handleChange = (event: any) => {
       setText(event.target.value);
     }
   
-    // useEffect(() => {
-    //   setText("toto à vélo");
-    // })
+    useEffect(() => {
+      setText(val);
+    }, [val])
   
     return (
       <>
