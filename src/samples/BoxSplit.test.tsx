@@ -94,7 +94,7 @@ const BoxInclusion = () => {
 
 }
 
-const TestCases = [SeparateBoxes, AdjacentBoxes, BoxInclusion];
+const TestCases: any = {SeparateBoxes, AdjacentBoxes, BoxInclusion};
 
 export default ({ args }: any) => {
     const [currCase, setCurrCase] = useState(0);
@@ -114,11 +114,13 @@ export default ({ args }: any) => {
         }
     }, [])
 
-    const TestCase = TestCases[currCase];
+    const caseName = Object.keys(TestCases)[currCase];
+    const TestCase = TestCases[caseName];
+
     return (
         <>
             <InfoOverlay sampleName={sampleName} sampleDesc={sampleDesc} />
-            <CaseSelector items={TestCases.map(elt=>elt.name)} current={currCase}  onSelect={onCaseChange} />
+            <CaseSelector items={Object.keys(TestCases)} current={currCase}  onSelect={onCaseChange} />
             <Canvas camera={{ position: [100, 50, 100] }}>
                 <ambientLight intensity={2} />
                 <Wrapper />
