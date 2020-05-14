@@ -71,7 +71,7 @@ run 'npm i' in project's directory to install dependancies
 - add new entry in samples/index with your new sample declaration
 - directly access new sample with url: `localhost:3000/\<SampleName>
 
-# Showcas.
+# Showcases
 
 Embedded samples are voluntarily basic but tries to demonstrates some features such as:
 
@@ -84,8 +84,8 @@ Embedded samples are voluntarily basic but tries to demonstrates some features s
 
 With time demos may become more interesting but for now this isn't the priority of this project
 
-# Source code organization and folder structure:
+# Other topics
 
-[Code structure](Organization)
+[Code structure (wiki)](https://github.com/etienne1911/three-react-template/wiki/Organization)
 
-[Best pratices](Guidelines)
+[Best pratices (wiki)](https://github.com/etienne1911/three-react-template/wiki/Guidelines)
